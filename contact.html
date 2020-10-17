@@ -28,7 +28,7 @@
         }
         .nav-link a{
             text-decoration: none;  
-            color: #000;
+            color: inherit;
             transition: 0.2s;
         }
           .nav-link a:hover{
@@ -41,13 +41,24 @@
         }
         .link{
             text-decoration: none;
-            color: #000;
+            color: inherit;
             transition: 0.2s;
         }
         .links a:hover{
             color: gray;
         }
+        body {
+            margin-left:auto; 
+            margin-right:auto; 
+            background-color: #ffffff;
+            color: #000000;
+        }
+          .dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
     </style>
+    <script src="dark-light-mode.js"></script>
 </head>
 <body>
     <header>
@@ -60,6 +71,7 @@
               <li class="nav-link"><a href="about.html">Om</a></li>
               <li class="nav-link"><a href="contact.html">Kontakt</a></li>
               <li class="nav-link"><a href="faq.html">FAQ</a></li>
+              <li class="dark-mode"><button onclick="darkmode()">Dark/light mode</button></li>
             </ul>
        </nav>
     </header>  '

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="lang="sv-SE"">
+<html class="lang="sv-SE">
 <html>
 <head>
     <meta charset="UTF-8">
@@ -28,27 +28,37 @@
         }
         .nav-link a{
             text-decoration: none;  
-            color: #000;
+            color: inherit;
             transition: 0.2s;
         }
           .nav-link a:hover{
             color: gray;
-          }
+        }
           body {
             margin-left:auto; 
             margin-right:auto; 
-          }
+            background-color: #ffffff;
+            color: #000000;
+        }
+          .dark-mode {
+            background-color: #000000;
+            color: #ffffff;
+        }
+        
+
           .picture{
               text-align: center;
               margin-top: 10vh;
-          }
-          .announcement{
+        }
+        .announcement{
             text-align: center;
             margin-top: 10vh;
           }
 
+
           
     </style>
+    <script src="dark-light-mode.js"></script>
 </head>
 <body>
     <header>
@@ -61,16 +71,17 @@
               <li class="nav-link"><a href="about.html">Om</a></li>
               <li class="nav-link"><a href="contact.html">Kontakt</a></li>
               <li class="nav-link"><a href="faq.html">FAQ</a></li>
+              <li class="dark-mode"><button onclick="darkmode()">Dark/light mode</button></li>
             </ul>
        </nav>
     </header>  
     <hr style="width: 90%; margin: auto;">
 
     <div class="picture">
-    <img src="scarface.png">
+        <img src="scarface.png">
     </div>
     <div class="announcement"
          <p>SIDAN ÄR UNDER EN TIDIG VERISON OCH KOMMER UPPDATERAS OFTA OCH FIXAS TILL</p>
-    </div>     
+    </div>   
 </body>
 </html>
