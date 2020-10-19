@@ -42,7 +42,7 @@
         }
         section a{
             text-decoration: none;
-            color: #000;
+            color: inherit;
             transition: 0.2s;
         }
         section a:hover{
@@ -54,11 +54,10 @@
         }
         body {
             margin-left:auto; 
-            margin-right:auto; 
-            background-color: #ffffff;
-            color: #000000;
-        }
-          .dark-mode {
+            margin-right:auto;
+        } 
+
+        .dark-mode {
             background-color: #000000;
             color: #ffffff;
         }
@@ -76,7 +75,7 @@
               <li class="nav-link"><a href="about.html">Om</a></li>
               <li class="nav-link"><a href="contact.html">Kontakt</a></li>
               <li class="nav-link"><a href="faq.html">FAQ</a></li>
-              <li class="dark-mode"><button onclick="darkmode()">Dark/light mode</button></li>
+              <li class="dark-mode"><button onclick="buttonFunction('darklightmode')"> Dark/lightmode</button></li>
             </ul>
        </nav>
     </header>  
