@@ -71,7 +71,7 @@
               <li class="nav-link"><a href="about.html">Om</a></li>
               <li class="nav-link"><a href="contact.html">Kontakt</a></li>
               <li class="nav-link"><a href="faq.html">FAQ</a></li>
-              <li class="dark-mode"><button onclick="buttonFunction('darklightmode')"> Dark/lightmode</button></li>
+              <li class="dark-mode"><button onclick="buttonFunction('isDarkMode')"> Dark/lightmode</button></li>
             </ul>
        </nav>
     </header>  '
@@ -80,5 +80,15 @@
     <section>
         <p>Vill du kontakta mig? Då kan du antingen maila mig på adressen nedan eller så skickar du ett DM i Discord! <br> Mail: tgg@telia.com <br> Discord: TechyGuy#3470</p>
     </section> 
+    <script>                          
+         isDarkMode = getCookie('darkmode')
+        var element = document.body
+    
+        if(isDarkMode === '1') {
+         element.classList.add('dark-mode')
+        } else {
+        element.classList.remove('dark-mode')
+    }
+   </script>
 </body>
 </html>

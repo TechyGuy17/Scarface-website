@@ -60,7 +60,6 @@
     </style>
     <script src="dark-light-mode.js"></script>
 </head>
-<body>
     <header>
         <div class="logo-container">
             <h3>Scarface</h3>
@@ -71,7 +70,7 @@
               <li class="nav-link"><a href="about.html">Om</a></li>
               <li class="nav-link"><a href="contact.html">Kontakt</a></li>
               <li class="nav-link"><a href="faq.html">FAQ</a></li>
-              <li class="dark-mode"><button onclick="buttonFunction('darklightmode')"> Dark/lightmode</button></li>
+              <li class="dark-mode"><button onclick="buttonFunction('isDarkMode')"> Dark/lightmode</button></li>
             </ul>
        </nav>
     </header>  
@@ -82,6 +81,16 @@
     </div>
     <div class="announcement"
          <p>SIDAN ÄR UNDER EN TIDIG VERISON OCH KOMMER UPPDATERAS OFTA OCH FIXAS TILL</p>
-    </div>   
+    </div>  
+   <script>                          
+         isDarkMode = getCookie('darkmode')
+        var element = document.body
+    
+        if(isDarkMode === '1') {
+         element.classList.add('dark-mode')
+        } else {
+        element.classList.remove('dark-mode')
+    }
+   </script>
 </body>
 </html>

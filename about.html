@@ -72,7 +72,7 @@
               <li class="nav-link"><a href="about.html">Om</a></li>
               <li class="nav-link"><a href="contact.html">Kontakt</a></li>
               <li class="nav-link"><a href="faq.html">FAQ</a></li>
-              <li class="dark-mode"><button onclick="buttonFunction('darklightmode')"> Dark/lightmode</button></li>
+              <li class="dark-mode"><button onclick="buttonFunction('isDarkMode')"> Dark/lightmode</button></li>
             </ul>
        </nav>
     </header>   
@@ -82,5 +82,17 @@
         <p>Scarface är minecraft servern jag (TechyGuy) har skapat som alla jag känner är välkomna på, vill du gå med? Gå då in på <a href="contact.html">kontakt</a> och skriv till mig! Vi använder även kryptovalutan <a href="https://kryptokrona.se">Kryptokrona</a> som en alternativ valuta för de som vill, transaktionerna kan göras i discord servern med hjälp av kryptokrona boten! Vill ni ha hjälp om hur den fungerar fråga bara!</p>
         
     </section>
+    
+    <script>                          
+         isDarkMode = getCookie('darkmode')
+        var element = document.body
+    
+        if(isDarkMode === '1') {
+         element.classList.add('dark-mode')
+        } else {
+        element.classList.remove('dark-mode')
+    }
+   </script>
+    
 </body>
 </html>

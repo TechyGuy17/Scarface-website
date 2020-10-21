@@ -75,7 +75,7 @@
               <li class="nav-link"><a href="about.html">Om</a></li>
               <li class="nav-link"><a href="contact.html">Kontakt</a></li>
               <li class="nav-link"><a href="faq.html">FAQ</a></li>
-              <li class="dark-mode"><button onclick="buttonFunction('darklightmode')"> Dark/lightmode</button></li>
+              <li class="dark-mode"><button onclick="buttonFunction('isDarkMode')"> Dark/lightmode</button></li>
             </ul>
        </nav>
     </header>  
@@ -86,6 +86,16 @@
     <div>
         <p>Kommer uppdatera den här sidan med tiden så har du en fråga du vill ha här skicka dem till mig!</p>
     </div>
-
+    
+<script>                          
+         isDarkMode = getCookie('darkmode')
+        var element = document.body
+    
+        if(isDarkMode === '1') {
+         element.classList.add('dark-mode')
+        } else {
+        element.classList.remove('dark-mode')
+    }
+   </script>
 </body>
 </html>
