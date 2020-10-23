@@ -32,3 +32,21 @@ function checkCookie() {
     }
   }
 }
+
+function onDarkmodeButtonPressed(){
+  if (isDarkMode === '1') {
+    isDarkMode = '0'
+  } else {
+    isDarkMode = '1'
+  }
+  
+  setCookie('darkmode', isDarkMode, 365);
+  var element = document.body
+    
+  if(isDarkMode === '1') {
+    element.classList.add('dark-mode')
+  } else {
+    element.classList.remove('dark-mode')
+  }
+
+}
